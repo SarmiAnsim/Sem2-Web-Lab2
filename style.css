@@ -1,0 +1,214 @@
+.main{
+    font-weight: lighter;
+    font-family: monospace, fantasy;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.main div {
+    outline: 4px solid #56591a;
+    background-color: #e0e2ff;
+    text-align: center;
+}
+
+.header {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.checkbox {
+    width: 2px;
+}
+
+input[type="number"] {
+    background-color: #d3e8df;
+    vertical-align: top;
+    outline: none;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;    
+    text-indent: 10px;
+    display: inline-block;
+    width: 70px;
+    box-sizing: border-box;
+    border: 1px solid #33360a;
+    font-size: 14px;
+    border-radius: 3px;
+} 
+ 
+input[type="number"]:focus {
+    outline: 2px solid blue;
+}
+
+table {
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: LightGray;
+    width: 100%;
+    cursor: default;
+}
+
+th, td {
+    border-bottom: 2px solid #ddd;
+    border: 1px solid black;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+
+.change {
+    width: 20px;
+}
+
+.finded {
+    background-color: #1e3875;
+}
+
+tbody.values tr:hover {background-color: #455887;}
+
+tbody.values tr:focus {background-color: #455887;}
+
+tbody.values tr td:focus {
+    background-color: #d3e8df;
+    cursor: text;
+    color: #363b45;
+}
+
+.button21 {
+    margin: 8px;
+    position: relative;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209,209,217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    padding: .5em 1em;
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    box-shadow:
+        0 1px rgba(255,255,255,.2) inset,
+        0 3px 5px rgba(0,1,6,.5),
+        0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+}
+.button21:hover:not(:active) {
+    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+.button21:active {
+    top: 1px;
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow:
+        0 0 1px rgba(0,0,0,.5) inset,
+        0 2px 3px rgba(0,0,0,.5) inset,
+        0 1px 1px rgba(255,255,255,.1);
+}
+
+.table_dark {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+}
+.table_dark th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: 12px 17px;
+}
+.table_dark td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right:1px solid #37B5A5;
+    padding: 7px 17px;
+}
+.table_dark td.checkbox {
+    padding: 5px;
+}
+}
+.table_dark tr:last-child td {
+    border-bottom: none;
+}
+.table_dark td:last-child {
+    border-right: none;
+}
+.table_dark tr:hover td {
+    text-decoration: underline;
+}
+
+html {
+    background-image: url(galaxy.jpg);
+}
+
+/* для элемента input c type="checkbox" */
+    .custom-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .custom-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .custom-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #adb5bd;
+      border-radius: 0.25em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    /* стили при наведении курсора на checkbox */
+    .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+      border-color: #b3d7ff;
+    }
+
+    /* стили для активного чекбокса (при нажатии на него) */
+    .custom-checkbox:not(:disabled):active+label::before {
+      background-color: #b3d7ff;
+      border-color: #b3d7ff;
+    }
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .custom-checkbox:focus+label::before {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .custom-checkbox:focus:not(:checked)+label::before {
+      border-color: #80bdff;
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .custom-checkbox:checked+label::before {
+      border-color: #0b76ef;
+      background-color: #0b76ef;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .custom-checkbox:disabled+label::before {
+      background-color: #e9ecef;
+    }
+
+    body {
+      padding: 20px 50px;
+    }
+
+    .checkbox {
+      margin-bottom: 1em;
+    }

@@ -1,0 +1,25 @@
+{
+  "name": "lab2-api",
+  "version": "1.0.0",
+  "description": "Node.js and Express Rest API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Sem2-Web-Lab2"
+  },
+  "keywords": [
+    "Lab2"
+  ],
+  "author": "Mikhail Sarzhan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2"
+  }
+}

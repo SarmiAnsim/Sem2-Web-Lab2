@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Richard_Hendricks",
+    "age": "29",
+    "email": "richard@piedpiper.com"
+  },
+  {
+    "id": 2,
+    "name": "Bertram_Gilfoyle",
+    "age": "23",
+    "email": "gilfoyle@piedpiper.com"
+  },
+  {
+    "id": 3,
+    "name": "Galla_Cassa",
+    "age": "34",
+    "email": "gala@mail.ru"
+  },
+  {
+    "id": 4,
+    "name": "Max_Polovinkin",
+    "age": "23",
+    "email": "polMaxa@mail.ru"
+  },
+  {
+    "id": 5,
+    "name": "Sergey_Artamonov",
+    "age": "81",
+    "email": "serGay@mail.ru"
+  }
+]
